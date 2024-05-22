@@ -12,4 +12,14 @@ fn main() {
            object="the lazy dog",
            verb="jumps over ",
            subject="the quick brown fox");
+
+  let xs: [i32; 5] = [1, 2,3,4,5];
+  println!("{:?}", xs);
+  println!("printing all elements in the array using a for loop");
+  for i in 0..xs.len() + 1 { // Oops, one element too far!
+      match xs.get(i) {
+          Some(xval) => println!("{}: {}", i, xval),
+          None => println!("Slow down! {} is too far!", i),
+      }
+  }
 }
