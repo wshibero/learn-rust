@@ -1,6 +1,7 @@
-<h1>learn rust</h1>
+## Learn Rust
 this includes the following
 - variable definitions
 - struct definitions
 - array definitions
 - println! function
+- structs
